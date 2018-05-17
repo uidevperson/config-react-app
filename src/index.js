@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+// import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 function Square(props) {
@@ -19,13 +20,13 @@ class Board extends React.Component {
     };
   }
 
-  handleClick(i) {
+  handleClick = (i) => {
     const squares = this.state.squares.slice();
     squares[i] = 'X';
     this.setState({squares: squares});
   }
 
-  renderSquare(i) {
+  renderSquare = (i) => {
     return (
       <Square
         value={this.state.squares[i]}
