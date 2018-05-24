@@ -11,7 +11,6 @@ import './Square.css';
 //   );
 // };
 
-
 // functional component layout 1
 function Square(props) {
   return (
